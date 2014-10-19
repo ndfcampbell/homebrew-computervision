@@ -1,4 +1,4 @@
 homebrew-computervision
 =======================
 
-Set of home-brew taps for computer vision and graphics libraries.
+Set of homebrew taps for computer vision and graphics libraries.
