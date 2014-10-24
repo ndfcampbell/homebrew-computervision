@@ -123,6 +123,12 @@ class BoostLibstdcxx < Formula
       end
     end
 
+
+
+	args << "cxxflags=-stdlib=libstdc++" << "linkflags=-stdlib=libstdc++"
+
+
+
     system "./bootstrap.sh", *bootstrap_args
     system "./b2", *args
   end
