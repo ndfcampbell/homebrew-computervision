@@ -1,6 +1,6 @@
 require 'formula'
 
-class Boost < Formula
+class BoostLibstdcxx < Formula
   homepage 'http://www.boost.org'
   url 'https://downloads.sourceforge.net/project/boost/boost/1.56.0/boost_1_56_0.tar.bz2'
   sha1 'f94bb008900ed5ba1994a1072140590784b9b5df'
