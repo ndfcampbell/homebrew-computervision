@@ -48,6 +48,9 @@ class CgalLibstdcxx < Formula
     if build.with? "lapack"
       args << "-DWITH_LAPACK=ON"
     end
+	
+	args << "cxxflags=-stdlib=libstdc++" << "linkflags=-stdlib=libstdc++"
+
     args << '.'
     system "cmake", *args
     system "make install"
