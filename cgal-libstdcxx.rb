@@ -50,7 +50,7 @@ class CgalLibstdcxx < Formula
     end
 	
 	#args << "cxxflags=-stdlib=libstdc++" << "linkflags=-stdlib=libstdc++"
-	args << "CMAKE_CXX_FLAGS=-stdlib=libstdc++"
+	args << "-DCMAKE_CXX_FLAGS=-stdlib=libstdc++"
 
     args << '.'
     system "cmake", *args
