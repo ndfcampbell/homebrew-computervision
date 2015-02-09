@@ -35,7 +35,7 @@ class Boost150Libstdcxx < Formula
   option 'without-python', 'Build without Python'
   option 'with-icu', 'Build regexp engine with icu support'
 
-  depends_on UniversalPython.new if needs_universal_python?
+  #depends_on UniversalPython.new if needs_universal_python?
   depends_on "icu4c" if build.include? "with-icu"
 
   fails_with :llvm do
