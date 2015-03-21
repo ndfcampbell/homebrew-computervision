@@ -35,6 +35,8 @@ class Vxl < Formula
             "-DBUILD_RPL=OFF",
             "-DBUILD_TBL=OFF",
             "-DBUILD_TESTING=OFF",
+            "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+            "-DCMAKE_CXX_FLAGS=\"-arch x86_64 -Xarch_x86_64 -mmacosx-version-min=10.7\"",
             "-DCMAKE_BUILD_WITH_INSTALL_RPATH=ON",
             "-DCMAKE_INSTALL_NAME_DIR=#{HOMEBREW_PREFIX}/lib"]
 	
