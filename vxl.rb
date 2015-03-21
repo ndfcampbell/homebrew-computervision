@@ -48,8 +48,7 @@ class Vxl < Formula
     args << '.'
 
     system "cmake", *args
-    system "make VERBOSE=1 vnl"
-    system "make -j 8 vnl vnl_algo vnl_io vnl_xio install"
+    system "make vnl vnl_algo vnl_io vnl_xio install"
   end
 end
 
