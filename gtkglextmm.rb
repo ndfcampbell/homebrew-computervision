@@ -9,11 +9,11 @@ class Gtkglextmm < Formula
   sha256 "8f499c1f95678c56cce908c10bf2c1d0f2267b87e0c480385fa4b128c75bdf7b"
 
   # depends_on "cmake" => :build
-  depends_on :x11 # if your formula requires any X11/XQuartz components
   depends_on 'pkg-config' => :build
-  depends_on 'glib'
-  depends_on 'gtk+'
+  depends_on 'glibmm'
+  depends_on 'gtkmm'
   depends_on 'gtkglext'
+  depends_on :x11 # if your formula requires any X11/XQuartz components
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
