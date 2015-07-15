@@ -15,6 +15,12 @@ class Gtkglextmm < Formula
   depends_on 'gtkglext'
   depends_on :x11 # if your formula requires any X11/XQuartz components
 
+  # Fixes header include order, using patch from macports: https://trac.macports.org/ticket/27059
+  # Upstream bug report: https://bugzilla.gnome.org/show_bug.cgi?id=636831
+  def patches
+    { :p0 => "https://trac.macports.org/export/89836/trunk/dports/devel/gtkglextmm/files/patch-gtkglext_gtkmm_gl-widget.cc.diff" }
+  end
+
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
 
