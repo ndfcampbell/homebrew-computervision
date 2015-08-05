@@ -12,6 +12,10 @@ class Mxflib < Formula
   # depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
 
+  def patches
+    DATA
+  end
+
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
 
@@ -20,9 +24,6 @@ class Mxflib < Formula
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
-
-    patch :DATA
-    patch :p0, :DATA
 
     # system "cmake", ".", *std_cmake_args
     system "make", "install" # if this fails, try separate make/make install steps
@@ -43,9 +44,10 @@ class Mxflib < Formula
 end
 
 __END__
---- mxflib/smartptr.h
-+++ mxflib/smartptr.h
-@@ -503,7 +503,7 @@
+diff -rupN mxflib-1.0.1/mxflib/smartptr.h mxflib-1.0.1/mxflib/smartptr.h
+--- mxflib-1.0.1/mxflib/smartptr.h  2005-10-13 14:36:11.000000000 +0100
++++ mxflib-1.0.1/mxflib/smartptr.h  2015-08-05 04:19:24.000000000 +0100
+@@ -503,7 +503,7 @@ namespace mxflib
     }
  
     //! Comparison function to allow sorting by indexed value
@@ -54,3 +56,4 @@ __END__
  
     //! Get a cast version of the pointer
     /*! This is used via the SmartPtr_Cast() Macro to allow MSVC 6 to work!!
+    
