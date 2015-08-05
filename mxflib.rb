@@ -48,12 +48,11 @@ diff -rupN mxflib-1.0.1/mxflib/smartptr.h mxflib-1.0.1/mxflib/smartptr.h
 --- mxflib-1.0.1/mxflib/smartptr.h  2005-10-13 14:36:11.000000000 +0100
 +++ mxflib-1.0.1/mxflib/smartptr.h  2015-08-05 04:19:24.000000000 +0100
 @@ -503,7 +503,7 @@ namespace mxflib
-    }
+ 		}
  
-    //! Comparison function to allow sorting by indexed value
--   bool operator<(SmartPtr &Other) { return this.operator<(*Other->GetPtr()); }
-+   bool operator<(SmartPtr &Other) { return this->operator<(*Other->GetPtr()); }
+ 		//! Comparison function to allow sorting by indexed value
+-		bool operator<(SmartPtr &Other) { return this.operator<(*Other->GetPtr()); }
++		bool operator<(SmartPtr &Other) { return this->operator<(*Other->GetPtr()); }
  
-    //! Get a cast version of the pointer
-    /*! This is used via the SmartPtr_Cast() Macro to allow MSVC 6 to work!!
-    
+ 		//! Get a cast version of the pointer
+ 		/*! This is used via the SmartPtr_Cast() Macro to allow MSVC 6 to work!!
