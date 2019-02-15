@@ -7,7 +7,7 @@ class Toon < Formula
   homepage 'http://www.edwardrosten.com/cvd/toon.html'
   #url 'http://git.savannah.gnu.org/cgit/toon.git'
   url 'git://github.com/edrosten/TooN.git', :using => :git, :branch => "origin/c++11"
-  version '2.2'
+  version '2.0'
 
   # depends_on 'cmake' => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
