@@ -3,7 +3,7 @@ require 'formula'
 class Vxl < Formula
   homepage 'http://vxl.sourceforge.net'
   url 'http://downloads.sourceforge.net/project/vxl/vxl/1.17/vxl-1.17.0.tar.gz'
-  sha128 '223fab80d734bf20e96aa5c29173fca371e0ae28'
+  sha256 '223fab80d734bf20e96aa5c29173fca371e0ae28'
 
   bottle do
   #  sha1 "01d337030d2848fb4b6fe6bd35f886c43693b5bf" => :yosemite
