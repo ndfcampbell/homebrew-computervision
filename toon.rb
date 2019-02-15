@@ -6,7 +6,6 @@ require 'formula'
 class Toon < Formula
   homepage 'http://www.edwardrosten.com/cvd/toon.html'
   url 'http://git.savannah.gnu.org/cgit/toon.git'
-  sha1 ''
   version '2.0'
 
   # depends_on 'cmake' => :build
