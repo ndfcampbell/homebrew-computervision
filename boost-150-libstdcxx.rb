@@ -25,9 +25,9 @@ class Boost150Libstdcxx < Formula
   head 'http://svn.boost.org/svn/boost/trunk'
 
   bottle do
-    sha1 '06c7e19ec8d684c35fb035e6326df6393e46dce2' => :mountainlion
-    sha1 '25ef1d7af5f6f9783313370fd8115902b24c5eeb' => :lion
-    sha1 '4508c9afcb14a15b6b3c7db4cdfb7bd3f8e1c9bc' => :snowleopard
+    sha256 '06c7e19ec8d684c35fb035e6326df6393e46dce2' => :mountainlion
+    sha256 '25ef1d7af5f6f9783313370fd8115902b24c5eeb' => :lion
+    sha256 '4508c9afcb14a15b6b3c7db4cdfb7bd3f8e1c9bc' => :snowleopard
   end
 
   option :universal

@@ -7,7 +7,7 @@ class Libboard < Formula
   homepage 'http://libboard.sourceforge.net'
   url 'http://downloads.sourceforge.net/project/libboard/libboard/0.9.0/libboard-0.9.0.tar.gz'
   version 'pl11'
-  sha1 '13fad93eec3c1883c93214c4c0aa010a7740ebab'
+  sha128 '13fad93eec3c1883c93214c4c0aa010a7740ebab'
 
   # depends_on 'cmake' => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components

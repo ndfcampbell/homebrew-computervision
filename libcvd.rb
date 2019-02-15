@@ -7,7 +7,6 @@ class Libcvd < Formula
   homepage 'http://www.edwardrosten.com/cvd/index.html'
 #url 'http://git.savannah.gnu.org/cgit/libcvd.git'
   url 'https://github.com/ndfcampbell/libcvd.git'
-  sha1 ''
   version '1.0'
 
   # depends_on 'cmake' => :build
