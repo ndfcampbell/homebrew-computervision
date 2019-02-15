@@ -20,7 +20,7 @@ end
 class Boost150Libstdcxx < Formula
   homepage 'http://www.boost.org'
   url 'http://downloads.sourceforge.net/project/boost/boost/1.50.0/boost_1_50_0.tar.bz2'
-  sha1 'ee06f89ed472cf369573f8acf9819fbc7173344e'
+  sha256 'ee06f89ed472cf369573f8acf9819fbc7173344e'
 
   head 'http://svn.boost.org/svn/boost/trunk'
 
