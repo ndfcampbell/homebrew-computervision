@@ -125,7 +125,8 @@ class BoostLibstdcxx < Formula
 
 
 
-	args << "cxxflags=-stdlib=libstdc++" << "linkflags=-stdlib=libstdc++"
+	# args << "cxxflags=-stdlib=libstdc++" << "linkflags=-stdlib=libstdc++"
+  args << "cxxflags=-arch x86_64 -Xarch_x86_64 -mmacosx-version-min=10.5" << "linkflags=-arch x86_64 -Xarch_x86_64 -mmacosx-version-min=10.5"
 
 
 
