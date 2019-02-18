@@ -12,8 +12,8 @@ class Clippoly < Formula
   # def patches
   #   DATA
   # end
-  patch :DATA
-  patch :p0, :DATA
+  #patch :DATA
+  #patch :p0, :DATA
 
   # depends_on 'cmake' => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
