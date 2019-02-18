@@ -7,7 +7,7 @@ class Clippoly < Formula
   homepage 'http://clippoly.sourceforge.net/'
   url 'http://downloads.sourceforge.net/project/clippoly/clippoly/clippoly-pl11/clippoly-pl11.tar.gz'
   version 'pl11'
-  sha256 '421df5594bcac83792377d322892d903743faa26'
+  sha256 '675d8dcf1c37e707aa3064c9a8d840964a0775502500a9d2c080f6924d3c1824'
 
   def patches
     DATA
