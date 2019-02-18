@@ -3,7 +3,7 @@ require 'formula'
 class Cgal403 < Formula
   homepage 'http://www.cgal.org/'
   url 'https://gforge.inria.fr/frs/download.php/31175/CGAL-4.0.2.tar.gz'
-  sha256 'e80af4b1da25690df63ce83dd083710cc3db9697'
+  sha256 'f125ed9d484e1e58d351f173aad184ce7a0d13c3f79205e69d819789727cfb2a'
   #url 'https://gforge.inria.fr/frs/download.php/34149/CGAL-4.5.tar.gz'
   #sha1 'd505d4257f214b200949d67570ad743d3a913633'
 
