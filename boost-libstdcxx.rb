@@ -3,7 +3,7 @@ require 'formula'
 class BoostLibstdcxx < Formula
   homepage 'http://www.boost.org'
   url 'https://downloads.sourceforge.net/project/boost/boost/1.56.0/boost_1_56_0.tar.bz2'
-  sha256 'f94bb008900ed5ba1994a1072140590784b9b5df'
+  sha256 '134732acaf3a6e7eba85988118d943f0fa6b7f0850f65131fff89823ad30ff1d'
 
   head 'https://github.com/boostorg/boost.git'
 
