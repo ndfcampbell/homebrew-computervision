@@ -9,9 +9,11 @@ class Clippoly < Formula
   version 'pl11'
   sha256 '675d8dcf1c37e707aa3064c9a8d840964a0775502500a9d2c080f6924d3c1824'
 
-  def patches
-    DATA
-  end
+  # def patches
+  #   DATA
+  # end
+  patch :DATA
+  patch :p0, :DATA
 
   # depends_on 'cmake' => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
