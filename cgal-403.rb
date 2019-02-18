@@ -1,6 +1,6 @@
 require 'formula'
 
-class CgalLibstdcxx < Formula
+class Cgal403 < Formula
   homepage 'http://www.cgal.org/'
   url 'https://gforge.inria.fr/frs/download.php/31175/CGAL-4.0.2.tar.gz'
   sha256 'e80af4b1da25690df63ce83dd083710cc3db9697'
